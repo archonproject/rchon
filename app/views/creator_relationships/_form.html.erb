@@ -1,0 +1,33 @@
+<%= form_for(@creator_relationship) do |f| %>
+  <% if @creator_relationship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@creator_relationship.errors.count, "error") %> prohibited this creator_relationship from being saved:</h2>
+
+      <ul>
+      <% @creator_relationship.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :creator_id %><br />
+    <%= f.number_field :creator_id %>
+  </div>
+  <div class="field">
+    <%= f.label :related_creator_id %><br />
+    <%= f.number_field :related_creator_id %>
+  </div>
+  <div class="field">
+    <%= f.label :creator_relationship_type_id %><br />
+    <%= f.number_field :creator_relationship_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

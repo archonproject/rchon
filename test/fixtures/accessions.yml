@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  enabled: false
+  accession_date: MyString
+  title: MyString
+  identifier: MyString
+  inclusive_dates: MyString
+  received_extent: 9.99
+  received_extent_unit_id: 1
+  unprocessed_extent: 9.99
+  unprocessed_extent_unit_id: 1
+  material_type_id: 1
+  processing_priority_id: 1
+  expected_completion_date: MyString
+  donor: MyString
+  donor_contact_info: MyText
+  donor_notes: MyText
+  physical_description: MyText
+  scope_content: MyText
+  comments: MyText
+
+two:
+  enabled: false
+  accession_date: MyString
+  title: MyString
+  identifier: MyString
+  inclusive_dates: MyString
+  received_extent: 9.99
+  received_extent_unit_id: 1
+  unprocessed_extent: 9.99
+  unprocessed_extent_unit_id: 1
+  material_type_id: 1
+  processing_priority_id: 1
+  expected_completion_date: MyString
+  donor: MyString
+  donor_contact_info: MyText
+  donor_notes: MyText
+  physical_description: MyText
+  scope_content: MyText
+  comments: MyText

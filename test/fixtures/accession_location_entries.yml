@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  accession_id: 1
+  location_id: 1
+  content: MyString
+  range_value: MyString
+  section: MyString
+  shelf: MyString
+  extent: 9.99
+  extent_unit_id: 1
+
+two:
+  accession_id: 1
+  location_id: 1
+  content: MyString
+  range_value: MyString
+  section: MyString
+  shelf: MyString
+  extent: 9.99
+  extent_unit_id: 1

@@ -1,0 +1,27 @@
+<h1>Listing creator_book_relationships</h1>
+
+<table>
+  <tr>
+    <th>Book</th>
+    <th>Creator</th>
+    <th>Primary creator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @creator_book_relationships.each do |creator_book_relationship| %>
+  <tr>
+    <td><%= creator_book_relationship.book_id %></td>
+    <td><%= creator_book_relationship.creator_id %></td>
+    <td><%= creator_book_relationship.primary_creator %></td>
+    <td><%= link_to 'Show', creator_book_relationship %></td>
+    <td><%= link_to 'Edit', edit_creator_book_relationship_path(creator_book_relationship) %></td>
+    <td><%= link_to 'Destroy', creator_book_relationship, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Creator book relationship', new_creator_book_relationship_path %>

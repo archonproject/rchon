@@ -1,0 +1,65 @@
+<%= form_for(@collection_content) do |f| %>
+  <% if @collection_content.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@collection_content.errors.count, "error") %> prohibited this collection_content from being saved:</h2>
+
+      <ul>
+      <% @collection_content.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :collection_id %><br />
+    <%= f.number_field :collection_id %>
+  </div>
+  <div class="field">
+    <%= f.label :level_container_id %><br />
+    <%= f.number_field :level_container_id %>
+  </div>
+  <div class="field">
+    <%= f.label :root_content_id %><br />
+    <%= f.number_field :root_content_id %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_id %><br />
+    <%= f.number_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sort_order %><br />
+    <%= f.number_field :sort_order %>
+  </div>
+  <div class="field">
+    <%= f.label :level_container_identifier %><br />
+    <%= f.text_field :level_container_identifier %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :contains_content %><br />
+    <%= f.check_box :contains_content %>
+  </div>
+  <div class="field">
+    <%= f.label :enabled %><br />
+    <%= f.check_box :enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_area :title %>
+  </div>
+  <div class="field">
+    <%= f.label :private_title %><br />
+    <%= f.text_area :private_title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

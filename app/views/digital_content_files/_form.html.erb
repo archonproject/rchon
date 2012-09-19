@@ -1,0 +1,33 @@
+<%= form_for(@digital_content_file) do |f| %>
+  <% if @digital_content_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@digital_content_file.errors.count, "error") %> prohibited this digital_content_file from being saved:</h2>
+
+      <ul>
+      <% @digital_content_file.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :default_access_level %><br />
+    <%= f.number_field :default_access_level %>
+  </div>
+  <div class="field">
+    <%= f.label :digital_content_id %><br />
+    <%= f.number_field :digital_content_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :display_order %><br />
+    <%= f.number_field :display_order %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

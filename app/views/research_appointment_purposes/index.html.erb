@@ -1,0 +1,23 @@
+<h1>Listing research_appointment_purposes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @research_appointment_purposes.each do |research_appointment_purpose| %>
+  <tr>
+    <td><%= research_appointment_purpose.name %></td>
+    <td><%= link_to 'Show', research_appointment_purpose %></td>
+    <td><%= link_to 'Edit', edit_research_appointment_purpose_path(research_appointment_purpose) %></td>
+    <td><%= link_to 'Destroy', research_appointment_purpose, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Research appointment purpose', new_research_appointment_purpose_path %>

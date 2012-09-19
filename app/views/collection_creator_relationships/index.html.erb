@@ -1,0 +1,27 @@
+<h1>Listing collection_creator_relationships</h1>
+
+<table>
+  <tr>
+    <th>Collection</th>
+    <th>Creator</th>
+    <th>Primary creator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @collection_creator_relationships.each do |collection_creator_relationship| %>
+  <tr>
+    <td><%= collection_creator_relationship.collection_id %></td>
+    <td><%= collection_creator_relationship.creator_id %></td>
+    <td><%= collection_creator_relationship.primary_creator %></td>
+    <td><%= link_to 'Show', collection_creator_relationship %></td>
+    <td><%= link_to 'Edit', edit_collection_creator_relationship_path(collection_creator_relationship) %></td>
+    <td><%= link_to 'Destroy', collection_creator_relationship, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Collection creator relationship', new_collection_creator_relationship_path %>

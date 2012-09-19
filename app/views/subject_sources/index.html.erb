@@ -1,0 +1,25 @@
+<h1>Listing subject_sources</h1>
+
+<table>
+  <tr>
+    <th>Subject source</th>
+    <th>Ead source</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subject_sources.each do |subject_source| %>
+  <tr>
+    <td><%= subject_source.subject_source %></td>
+    <td><%= subject_source.ead_source %></td>
+    <td><%= link_to 'Show', subject_source %></td>
+    <td><%= link_to 'Edit', edit_subject_source_path(subject_source) %></td>
+    <td><%= link_to 'Destroy', subject_source, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subject source', new_subject_source_path %>

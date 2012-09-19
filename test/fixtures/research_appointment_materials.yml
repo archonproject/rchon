@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  research_appointment_id: 1
+  collection_id: 1
+  collection_content_id: 1
+  retrieval_time: 1
+  retrieval_user_id: 1
+  return_time: 1
+  return_user_id: 1
+
+two:
+  research_appointment_id: 1
+  collection_id: 1
+  collection_content_id: 1
+  retrieval_time: 1
+  retrieval_user_id: 1
+  return_time: 1
+  return_user_id: 1

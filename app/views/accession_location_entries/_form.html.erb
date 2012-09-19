@@ -1,0 +1,49 @@
+<%= form_for(@accession_location_entry) do |f| %>
+  <% if @accession_location_entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accession_location_entry.errors.count, "error") %> prohibited this accession_location_entry from being saved:</h2>
+
+      <ul>
+      <% @accession_location_entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :accession_id %><br />
+    <%= f.number_field :accession_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location_id %><br />
+    <%= f.number_field :location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <%= f.label :range_value %><br />
+    <%= f.text_field :range_value %>
+  </div>
+  <div class="field">
+    <%= f.label :section %><br />
+    <%= f.text_field :section %>
+  </div>
+  <div class="field">
+    <%= f.label :shelf %><br />
+    <%= f.text_field :shelf %>
+  </div>
+  <div class="field">
+    <%= f.label :extent %><br />
+    <%= f.text_field :extent %>
+  </div>
+  <div class="field">
+    <%= f.label :extent_unit_id %><br />
+    <%= f.number_field :extent_unit_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

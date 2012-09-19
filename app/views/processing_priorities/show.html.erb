@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Processing priority:</b>
+  <%= @processing_priority.processing_priority %>
+</p>
+
+<p>
+  <b>Sort order:</b>
+  <%= @processing_priority.sort_order %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @processing_priority.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_processing_priority_path(@processing_priority) %> |
+<%= link_to 'Back', processing_priorities_path %>

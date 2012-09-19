@@ -1,0 +1,33 @@
+<%= form_for(@creator_accession_relationship) do |f| %>
+  <% if @creator_accession_relationship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@creator_accession_relationship.errors.count, "error") %> prohibited this creator_accession_relationship from being saved:</h2>
+
+      <ul>
+      <% @creator_accession_relationship.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :accession_id %><br />
+    <%= f.number_field :accession_id %>
+  </div>
+  <div class="field">
+    <%= f.label :classification_id %><br />
+    <%= f.number_field :classification_id %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_id %><br />
+    <%= f.number_field :collection_id %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_collection %><br />
+    <%= f.check_box :primary_collection %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

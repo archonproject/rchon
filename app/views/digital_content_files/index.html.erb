@@ -1,0 +1,29 @@
+<h1>Listing digital_content_files</h1>
+
+<table>
+  <tr>
+    <th>Default access level</th>
+    <th>Digital content</th>
+    <th>Title</th>
+    <th>Display order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @digital_content_files.each do |digital_content_file| %>
+  <tr>
+    <td><%= digital_content_file.default_access_level %></td>
+    <td><%= digital_content_file.digital_content_id %></td>
+    <td><%= digital_content_file.title %></td>
+    <td><%= digital_content_file.display_order %></td>
+    <td><%= link_to 'Show', digital_content_file %></td>
+    <td><%= link_to 'Edit', edit_digital_content_file_path(digital_content_file) %></td>
+    <td><%= link_to 'Destroy', digital_content_file, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Digital content file', new_digital_content_file_path %>

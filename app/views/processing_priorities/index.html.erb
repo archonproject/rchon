@@ -1,0 +1,27 @@
+<h1>Listing processing_priorities</h1>
+
+<table>
+  <tr>
+    <th>Processing priority</th>
+    <th>Sort order</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @processing_priorities.each do |processing_priority| %>
+  <tr>
+    <td><%= processing_priority.processing_priority %></td>
+    <td><%= processing_priority.sort_order %></td>
+    <td><%= processing_priority.description %></td>
+    <td><%= link_to 'Show', processing_priority %></td>
+    <td><%= link_to 'Edit', edit_processing_priority_path(processing_priority) %></td>
+    <td><%= link_to 'Destroy', processing_priority, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Processing priority', new_processing_priority_path %>

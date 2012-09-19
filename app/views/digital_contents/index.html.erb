@@ -1,0 +1,47 @@
+<h1>Listing digital_contents</h1>
+
+<table>
+  <tr>
+    <th>Browsable</th>
+    <th>Title</th>
+    <th>Collection</th>
+    <th>Collection content</th>
+    <th>Identifier</th>
+    <th>Scope</th>
+    <th>Physical description</th>
+    <th>Date</th>
+    <th>Publisher</th>
+    <th>Contributor</th>
+    <th>Rights statement</th>
+    <th>Content url</th>
+    <th>Hyperlink url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @digital_contents.each do |digital_content| %>
+  <tr>
+    <td><%= digital_content.browsable %></td>
+    <td><%= digital_content.title %></td>
+    <td><%= digital_content.collection_id %></td>
+    <td><%= digital_content.collection_content_id %></td>
+    <td><%= digital_content.identifier %></td>
+    <td><%= digital_content.scope %></td>
+    <td><%= digital_content.physical_description %></td>
+    <td><%= digital_content.date %></td>
+    <td><%= digital_content.publisher %></td>
+    <td><%= digital_content.contributor %></td>
+    <td><%= digital_content.rights_statement %></td>
+    <td><%= digital_content.content_url %></td>
+    <td><%= digital_content.hyperlink_url %></td>
+    <td><%= link_to 'Show', digital_content %></td>
+    <td><%= link_to 'Edit', edit_digital_content_path(digital_content) %></td>
+    <td><%= link_to 'Destroy', digital_content, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Digital content', new_digital_content_path %>

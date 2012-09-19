@@ -1,0 +1,23 @@
+<h1>Listing extent_units</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @extent_units.each do |extent_unit| %>
+  <tr>
+    <td><%= extent_unit.name %></td>
+    <td><%= link_to 'Show', extent_unit %></td>
+    <td><%= link_to 'Edit', edit_extent_unit_path(extent_unit) %></td>
+    <td><%= link_to 'Destroy', extent_unit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Extent unit', new_extent_unit_path %>

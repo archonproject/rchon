@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Browsable:</b>
+  <%= @digital_content.browsable %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @digital_content.title %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%= @digital_content.collection_id %>
+</p>
+
+<p>
+  <b>Collection content:</b>
+  <%= @digital_content.collection_content_id %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @digital_content.identifier %>
+</p>
+
+<p>
+  <b>Scope:</b>
+  <%= @digital_content.scope %>
+</p>
+
+<p>
+  <b>Physical description:</b>
+  <%= @digital_content.physical_description %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @digital_content.date %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%= @digital_content.publisher %>
+</p>
+
+<p>
+  <b>Contributor:</b>
+  <%= @digital_content.contributor %>
+</p>
+
+<p>
+  <b>Rights statement:</b>
+  <%= @digital_content.rights_statement %>
+</p>
+
+<p>
+  <b>Content url:</b>
+  <%= @digital_content.content_url %>
+</p>
+
+<p>
+  <b>Hyperlink url:</b>
+  <%= @digital_content.hyperlink_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_digital_content_path(@digital_content) %> |
+<%= link_to 'Back', digital_contents_path %>

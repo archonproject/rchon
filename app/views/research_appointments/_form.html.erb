@@ -1,0 +1,49 @@
+<%= form_for(@research_appointment) do |f| %>
+  <% if @research_appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@research_appointment.errors.count, "error") %> prohibited this research_appointment from being saved:</h2>
+
+      <ul>
+      <% @research_appointment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :submit_time %><br />
+    <%= f.number_field :submit_time %>
+  </div>
+  <div class="field">
+    <%= f.label :researcher_id %><br />
+    <%= f.number_field :researcher_id %>
+  </div>
+  <div class="field">
+    <%= f.label :appointment_purpose_id %><br />
+    <%= f.number_field :appointment_purpose_id %>
+  </div>
+  <div class="field">
+    <%= f.label :arrival_time %><br />
+    <%= f.number_field :arrival_time %>
+  </div>
+  <div class="field">
+    <%= f.label :departure_time %><br />
+    <%= f.number_field :departure_time %>
+  </div>
+  <div class="field">
+    <%= f.label :topic %><br />
+    <%= f.text_field :topic %>
+  </div>
+  <div class="field">
+    <%= f.label :researcher_comments %><br />
+    <%= f.text_area :researcher_comments %>
+  </div>
+  <div class="field">
+    <%= f.label :archivist_comments %><br />
+    <%= f.text_area :archivist_comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

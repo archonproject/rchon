@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Accession:</b>
+  <%= @creator_accession_relationship.accession_id %>
+</p>
+
+<p>
+  <b>Classification:</b>
+  <%= @creator_accession_relationship.classification_id %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%= @creator_accession_relationship.collection_id %>
+</p>
+
+<p>
+  <b>Primary collection:</b>
+  <%= @creator_accession_relationship.primary_collection %>
+</p>
+
+
+<%= link_to 'Edit', edit_creator_accession_relationship_path(@creator_accession_relationship) %> |
+<%= link_to 'Back', creator_accession_relationships_path %>

@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  browsable: false
+  title: MyString
+  collection_id: 1
+  collection_content_id: 1
+  identifier: MyString
+  scope: MyText
+  physical_description: MyText
+  date: MyString
+  publisher: MyString
+  contributor: MyString
+  rights_statement: MyText
+  content_url: MyString
+  hyperlink_url: false
+
+two:
+  browsable: false
+  title: MyString
+  collection_id: 1
+  collection_content_id: 1
+  identifier: MyString
+  scope: MyText
+  physical_description: MyText
+  date: MyString
+  publisher: MyString
+  contributor: MyString
+  rights_statement: MyText
+  content_url: MyString
+  hyperlink_url: false

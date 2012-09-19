@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Submit time:</b>
+  <%= @research_appointment.submit_time %>
+</p>
+
+<p>
+  <b>Researcher:</b>
+  <%= @research_appointment.researcher_id %>
+</p>
+
+<p>
+  <b>Appointment purpose:</b>
+  <%= @research_appointment.appointment_purpose_id %>
+</p>
+
+<p>
+  <b>Arrival time:</b>
+  <%= @research_appointment.arrival_time %>
+</p>
+
+<p>
+  <b>Departure time:</b>
+  <%= @research_appointment.departure_time %>
+</p>
+
+<p>
+  <b>Topic:</b>
+  <%= @research_appointment.topic %>
+</p>
+
+<p>
+  <b>Researcher comments:</b>
+  <%= @research_appointment.researcher_comments %>
+</p>
+
+<p>
+  <b>Archivist comments:</b>
+  <%= @research_appointment.archivist_comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_research_appointment_path(@research_appointment) %> |
+<%= link_to 'Back', research_appointments_path %>

@@ -1,0 +1,29 @@
+<h1>Listing creator_accession_relationships</h1>
+
+<table>
+  <tr>
+    <th>Accession</th>
+    <th>Classification</th>
+    <th>Collection</th>
+    <th>Primary collection</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @creator_accession_relationships.each do |creator_accession_relationship| %>
+  <tr>
+    <td><%= creator_accession_relationship.accession_id %></td>
+    <td><%= creator_accession_relationship.classification_id %></td>
+    <td><%= creator_accession_relationship.collection_id %></td>
+    <td><%= creator_accession_relationship.primary_collection %></td>
+    <td><%= link_to 'Show', creator_accession_relationship %></td>
+    <td><%= link_to 'Edit', edit_creator_accession_relationship_path(creator_accession_relationship) %></td>
+    <td><%= link_to 'Destroy', creator_accession_relationship, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Creator accession relationship', new_creator_accession_relationship_path %>

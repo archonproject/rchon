@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  parent_id: 1
+  creator_id: 1
+  classification_identifier: MyString
+  title: MyString
+  description: MyText
+
+two:
+  parent_id: 1
+  creator_id: 1
+  classification_identifier: MyString
+  title: MyString
+  description: MyText

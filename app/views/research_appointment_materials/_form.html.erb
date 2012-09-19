@@ -1,0 +1,45 @@
+<%= form_for(@research_appointment_material) do |f| %>
+  <% if @research_appointment_material.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@research_appointment_material.errors.count, "error") %> prohibited this research_appointment_material from being saved:</h2>
+
+      <ul>
+      <% @research_appointment_material.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :research_appointment_id %><br />
+    <%= f.number_field :research_appointment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_id %><br />
+    <%= f.number_field :collection_id %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_content_id %><br />
+    <%= f.number_field :collection_content_id %>
+  </div>
+  <div class="field">
+    <%= f.label :retrieval_time %><br />
+    <%= f.number_field :retrieval_time %>
+  </div>
+  <div class="field">
+    <%= f.label :retrieval_user_id %><br />
+    <%= f.number_field :retrieval_user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :return_time %><br />
+    <%= f.number_field :return_time %>
+  </div>
+  <div class="field">
+    <%= f.label :return_user_id %><br />
+    <%= f.number_field :return_user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

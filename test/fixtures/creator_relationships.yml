@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  creator_id: 1
+  related_creator_id: 1
+  creator_relationship_type_id: 1
+  description: MyText
+
+two:
+  creator_id: 1
+  related_creator_id: 1
+  creator_relationship_type_id: 1
+  description: MyText

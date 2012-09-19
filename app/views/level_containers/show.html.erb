@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @level_container.name %>
+</p>
+
+<p>
+  <b>Ead level:</b>
+  <%= @level_container.ead_level %>
+</p>
+
+<p>
+  <b>Intellectual level:</b>
+  <%= @level_container.intellectual_level %>
+</p>
+
+<p>
+  <b>Physical container:</b>
+  <%= @level_container.physical_container %>
+</p>
+
+<p>
+  <b>Primary ead level:</b>
+  <%= @level_container.primary_ead_level %>
+</p>
+
+<p>
+  <b>Global numbering:</b>
+  <%= @level_container.global_numbering %>
+</p>
+
+
+<%= link_to 'Edit', edit_level_container_path(@level_container) %> |
+<%= link_to 'Back', level_containers_path %>

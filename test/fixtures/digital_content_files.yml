@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  default_access_level: 1
+  digital_content_id: 1
+  title: MyString
+  display_order: 1
+
+two:
+  default_access_level: 1
+  digital_content_id: 1
+  title: MyString
+  display_order: 1

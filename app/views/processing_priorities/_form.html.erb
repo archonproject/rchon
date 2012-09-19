@@ -1,0 +1,29 @@
+<%= form_for(@processing_priority) do |f| %>
+  <% if @processing_priority.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@processing_priority.errors.count, "error") %> prohibited this processing_priority from being saved:</h2>
+
+      <ul>
+      <% @processing_priority.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :processing_priority %><br />
+    <%= f.text_field :processing_priority %>
+  </div>
+  <div class="field">
+    <%= f.label :sort_order %><br />
+    <%= f.number_field :sort_order %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

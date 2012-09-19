@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Book:</b>
+  <%= @creator_book_relationship.book_id %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @creator_book_relationship.creator_id %>
+</p>
+
+<p>
+  <b>Primary creator:</b>
+  <%= @creator_book_relationship.primary_creator %>
+</p>
+
+
+<%= link_to 'Edit', edit_creator_book_relationship_path(@creator_book_relationship) %> |
+<%= link_to 'Back', creator_book_relationships_path %>

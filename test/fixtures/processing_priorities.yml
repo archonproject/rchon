@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  processing_priority: MyString
+  sort_order: 1
+  description: MyText
+
+two:
+  processing_priority: MyString
+  sort_order: 1
+  description: MyText

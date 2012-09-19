@@ -1,0 +1,29 @@
+<%= form_for(@collection_creator_relationship) do |f| %>
+  <% if @collection_creator_relationship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@collection_creator_relationship.errors.count, "error") %> prohibited this collection_creator_relationship from being saved:</h2>
+
+      <ul>
+      <% @collection_creator_relationship.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :collection_id %><br />
+    <%= f.number_field :collection_id %>
+  </div>
+  <div class="field">
+    <%= f.label :creator_id %><br />
+    <%= f.number_field :creator_id %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_creator %><br />
+    <%= f.check_box :primary_creator %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

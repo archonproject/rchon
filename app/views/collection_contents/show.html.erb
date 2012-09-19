@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Collection:</b>
+  <%= @collection_content.collection_id %>
+</p>
+
+<p>
+  <b>Level container:</b>
+  <%= @collection_content.level_container_id %>
+</p>
+
+<p>
+  <b>Root content:</b>
+  <%= @collection_content.root_content_id %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @collection_content.parent_id %>
+</p>
+
+<p>
+  <b>Sort order:</b>
+  <%= @collection_content.sort_order %>
+</p>
+
+<p>
+  <b>Level container identifier:</b>
+  <%= @collection_content.level_container_identifier %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @collection_content.date %>
+</p>
+
+<p>
+  <b>Contains content:</b>
+  <%= @collection_content.contains_content %>
+</p>
+
+<p>
+  <b>Enabled:</b>
+  <%= @collection_content.enabled %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @collection_content.title %>
+</p>
+
+<p>
+  <b>Private title:</b>
+  <%= @collection_content.private_title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @collection_content.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_collection_content_path(@collection_content) %> |
+<%= link_to 'Back', collection_contents_path %>

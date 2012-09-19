@@ -1,0 +1,29 @@
+<h1>Listing creator_sources</h1>
+
+<table>
+  <tr>
+    <th>Creator source</th>
+    <th>Source abbreviation</th>
+    <th>Citation</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @creator_sources.each do |creator_source| %>
+  <tr>
+    <td><%= creator_source.creator_source %></td>
+    <td><%= creator_source.source_abbreviation %></td>
+    <td><%= creator_source.citation %></td>
+    <td><%= creator_source.description %></td>
+    <td><%= link_to 'Show', creator_source %></td>
+    <td><%= link_to 'Edit', edit_creator_source_path(creator_source) %></td>
+    <td><%= link_to 'Destroy', creator_source, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Creator source', new_creator_source_path %>

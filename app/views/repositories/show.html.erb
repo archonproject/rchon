@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @repository.name %>
+</p>
+
+<p>
+  <b>Administrator:</b>
+  <%= @repository.administrator %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @repository.code %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @repository.address %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @repository.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @repository.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @repository.state %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @repository.country %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @repository.zip %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @repository.phone %>
+</p>
+
+<p>
+  <b>Phone ext:</b>
+  <%= @repository.phone_ext %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @repository.fax %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @repository.email %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @repository.url %>
+</p>
+
+<p>
+  <b>Email signature:</b>
+  <%= @repository.email_signature %>
+</p>
+
+<p>
+  <b>Research functionality:</b>
+  <%= @repository.research_functionality %>
+</p>
+
+
+<%= link_to 'Edit', edit_repository_path(@repository) %> |
+<%= link_to 'Back', repositories_path %>

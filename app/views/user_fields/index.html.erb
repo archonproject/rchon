@@ -1,0 +1,29 @@
+<h1>Listing user_fields</h1>
+
+<table>
+  <tr>
+    <th>Collection content</th>
+    <th>Ead element</th>
+    <th>Title</th>
+    <th>Value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_fields.each do |user_field| %>
+  <tr>
+    <td><%= user_field.collection_content_id %></td>
+    <td><%= user_field.ead_element_id %></td>
+    <td><%= user_field.title %></td>
+    <td><%= user_field.value %></td>
+    <td><%= link_to 'Show', user_field %></td>
+    <td><%= link_to 'Edit', edit_user_field_path(user_field) %></td>
+    <td><%= link_to 'Destroy', user_field, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User field', new_user_field_path %>

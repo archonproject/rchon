@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @creator.name %>
+</p>
+
+<p>
+  <b>Name fuller form:</b>
+  <%= @creator.name_fuller_Form %>
+</p>
+
+<p>
+  <b>Name variants:</b>
+  <%= @creator.name_variants %>
+</p>
+
+<p>
+  <b>Creator type:</b>
+  <%= @creator.creator_type_id %>
+</p>
+
+<p>
+  <b>Dates:</b>
+  <%= @creator.dates %>
+</p>
+
+<p>
+  <b>Lcnaf dates:</b>
+  <%= @creator.lcnaf_dates %>
+</p>
+
+<p>
+  <b>Lcnaf compliant:</b>
+  <%= @creator.lcnaf_compliant %>
+</p>
+
+<p>
+  <b>Biog hist author:</b>
+  <%= @creator.biog_hist_author %>
+</p>
+
+<p>
+  <b>Biog hist:</b>
+  <%= @creator.biog_hist %>
+</p>
+
+<p>
+  <b>Sources:</b>
+  <%= @creator.sources %>
+</p>
+
+<p>
+  <b>Respository:</b>
+  <%= @creator.respository_id %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @creator.language_id %>
+</p>
+
+<p>
+  <b>Script:</b>
+  <%= @creator.script_id %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @creator.identifier %>
+</p>
+
+<p>
+  <b>Creator source:</b>
+  <%= @creator.creator_source_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_creator_path(@creator) %> |
+<%= link_to 'Back', creators_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Digital content:</b>
+  <%= @digital_content_creator_relationship.digital_content_id %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @digital_content_creator_relationship.creator_id %>
+</p>
+
+<p>
+  <b>Primary creator:</b>
+  <%= @digital_content_creator_relationship.primary_creator %>
+</p>
+
+
+<%= link_to 'Edit', edit_digital_content_creator_relationship_path(@digital_content_creator_relationship) %> |
+<%= link_to 'Back', digital_content_creator_relationships_path %>

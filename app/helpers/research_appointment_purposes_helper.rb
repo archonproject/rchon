@@ -1,0 +1,2 @@
+module ResearchAppointmentPurposesHelper
+end

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Creator source:</b>
+  <%= @creator_source.creator_source %>
+</p>
+
+<p>
+  <b>Source abbreviation:</b>
+  <%= @creator_source.source_abbreviation %>
+</p>
+
+<p>
+  <b>Citation:</b>
+  <%= @creator_source.citation %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @creator_source.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_creator_source_path(@creator_source) %> |
+<%= link_to 'Back', creator_sources_path %>

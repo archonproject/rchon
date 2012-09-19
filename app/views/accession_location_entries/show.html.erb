@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Accession:</b>
+  <%= @accession_location_entry.accession_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @accession_location_entry.location_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @accession_location_entry.content %>
+</p>
+
+<p>
+  <b>Range value:</b>
+  <%= @accession_location_entry.range_value %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @accession_location_entry.section %>
+</p>
+
+<p>
+  <b>Shelf:</b>
+  <%= @accession_location_entry.shelf %>
+</p>
+
+<p>
+  <b>Extent:</b>
+  <%= @accession_location_entry.extent %>
+</p>
+
+<p>
+  <b>Extent unit:</b>
+  <%= @accession_location_entry.extent_unit_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_accession_location_entry_path(@accession_location_entry) %> |
+<%= link_to 'Back', accession_location_entries_path %>

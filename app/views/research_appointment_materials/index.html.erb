@@ -1,0 +1,35 @@
+<h1>Listing research_appointment_materials</h1>
+
+<table>
+  <tr>
+    <th>Research appointment</th>
+    <th>Collection</th>
+    <th>Collection content</th>
+    <th>Retrieval time</th>
+    <th>Retrieval user</th>
+    <th>Return time</th>
+    <th>Return user</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @research_appointment_materials.each do |research_appointment_material| %>
+  <tr>
+    <td><%= research_appointment_material.research_appointment_id %></td>
+    <td><%= research_appointment_material.collection_id %></td>
+    <td><%= research_appointment_material.collection_content_id %></td>
+    <td><%= research_appointment_material.retrieval_time %></td>
+    <td><%= research_appointment_material.retrieval_user_id %></td>
+    <td><%= research_appointment_material.return_time %></td>
+    <td><%= research_appointment_material.return_user_id %></td>
+    <td><%= link_to 'Show', research_appointment_material %></td>
+    <td><%= link_to 'Edit', edit_research_appointment_material_path(research_appointment_material) %></td>
+    <td><%= link_to 'Destroy', research_appointment_material, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Research appointment material', new_research_appointment_material_path %>

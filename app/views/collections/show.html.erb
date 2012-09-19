@@ -1,0 +1,230 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Enabled:</b>
+  <%= @collection.enabled %>
+</p>
+
+<p>
+  <b>Extent:</b>
+  <%= @collection.extent %>
+</p>
+
+<p>
+  <b>Collection identifier:</b>
+  <%= @collection.collection_identifier %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @collection.title %>
+</p>
+
+<p>
+  <b>Sort title:</b>
+  <%= @collection.sort_title %>
+</p>
+
+<p>
+  <b>Inclusive dates:</b>
+  <%= @collection.inclusive_dates %>
+</p>
+
+<p>
+  <b>Predominant dates:</b>
+  <%= @collection.predominant_dates %>
+</p>
+
+<p>
+  <b>Acquisition date:</b>
+  <%= @collection.acquisition_date %>
+</p>
+
+<p>
+  <b>Orig copies url:</b>
+  <%= @collection.orig_copies_url %>
+</p>
+
+<p>
+  <b>Related materials url:</b>
+  <%= @collection.related_materials_url %>
+</p>
+
+<p>
+  <b>Publication date:</b>
+  <%= @collection.publication_date %>
+</p>
+
+<p>
+  <b>Biog hist author:</b>
+  <%= @collection.biog_hist_author %>
+</p>
+
+<p>
+  <b>Finding aid author:</b>
+  <%= @collection.finding_aid_author %>
+</p>
+
+<p>
+  <b>Repository:</b>
+  <%= @collection.repository_id %>
+</p>
+
+<p>
+  <b>Classification:</b>
+  <%= @collection.classification_id %>
+</p>
+
+<p>
+  <b>Descpriptive rules:</b>
+  <%= @collection.descpriptive_rules_id %>
+</p>
+
+<p>
+  <b>Finding language:</b>
+  <%= @collection.finding_language_id %>
+</p>
+
+<p>
+  <b>Normal date begin:</b>
+  <%= @collection.normal_date_begin %>
+</p>
+
+<p>
+  <b>Normal date end:</b>
+  <%= @collection.normal_date_end %>
+</p>
+
+<p>
+  <b>Extent unit:</b>
+  <%= @collection.extent_unit_id %>
+</p>
+
+<p>
+  <b>Material type:</b>
+  <%= @collection.material_type_id %>
+</p>
+
+<p>
+  <b>Scope:</b>
+  <%= @collection.scope %>
+</p>
+
+<p>
+  <b>Abstract:</b>
+  <%= @collection.abstract %>
+</p>
+
+<p>
+  <b>Arrangement:</b>
+  <%= @collection.arrangement %>
+</p>
+
+<p>
+  <b>Alt extent statement:</b>
+  <%= @collection.alt_extent_statement %>
+</p>
+
+<p>
+  <b>Access restrictions:</b>
+  <%= @collection.access_restrictions %>
+</p>
+
+<p>
+  <b>Use restrictions:</b>
+  <%= @collection.use_restrictions %>
+</p>
+
+<p>
+  <b>Physical access:</b>
+  <%= @collection.physical_access %>
+</p>
+
+<p>
+  <b>Technical access:</b>
+  <%= @collection.technical_access %>
+</p>
+
+<p>
+  <b>Acquisition source:</b>
+  <%= @collection.acquisition_source %>
+</p>
+
+<p>
+  <b>Acquisition method:</b>
+  <%= @collection.acquisition_method %>
+</p>
+
+<p>
+  <b>Appraisal info:</b>
+  <%= @collection.appraisal_info %>
+</p>
+
+<p>
+  <b>Accrual info:</b>
+  <%= @collection.accrual_info %>
+</p>
+
+<p>
+  <b>Custodial history:</b>
+  <%= @collection.custodial_history %>
+</p>
+
+<p>
+  <b>Orig copies note:</b>
+  <%= @collection.orig_copies_note %>
+</p>
+
+<p>
+  <b>Related materials:</b>
+  <%= @collection.related_materials %>
+</p>
+
+<p>
+  <b>Related publications:</b>
+  <%= @collection.related_publications %>
+</p>
+
+<p>
+  <b>Separated materials:</b>
+  <%= @collection.separated_materials %>
+</p>
+
+<p>
+  <b>Preferred citation:</b>
+  <%= @collection.preferred_citation %>
+</p>
+
+<p>
+  <b>Other note:</b>
+  <%= @collection.other_note %>
+</p>
+
+<p>
+  <b>Other url:</b>
+  <%= @collection.other_url %>
+</p>
+
+<p>
+  <b>Processing info:</b>
+  <%= @collection.processing_info %>
+</p>
+
+<p>
+  <b>Revision history:</b>
+  <%= @collection.revision_history %>
+</p>
+
+<p>
+  <b>Publication note:</b>
+  <%= @collection.publication_note %>
+</p>
+
+<p>
+  <b>Biog hist:</b>
+  <%= @collection.biog_hist %>
+</p>
+
+
+<%= link_to 'Edit', edit_collection_path(@collection) %> |
+<%= link_to 'Back', collections_path %>

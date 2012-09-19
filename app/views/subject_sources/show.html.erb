@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject source:</b>
+  <%= @subject_source.subject_source %>
+</p>
+
+<p>
+  <b>Ead source:</b>
+  <%= @subject_source.ead_source %>
+</p>
+
+
+<%= link_to 'Edit', edit_subject_source_path(@subject_source) %> |
+<%= link_to 'Back', subject_sources_path %>

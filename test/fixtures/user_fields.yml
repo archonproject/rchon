@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  collection_content_id: 1
+  ead_element_id: 1
+  title: MyString
+  value: MyText
+
+two:
+  collection_content_id: 1
+  ead_element_id: 1
+  title: MyString
+  value: MyText

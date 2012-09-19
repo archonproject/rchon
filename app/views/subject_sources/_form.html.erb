@@ -1,0 +1,25 @@
+<%= form_for(@subject_source) do |f| %>
+  <% if @subject_source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subject_source.errors.count, "error") %> prohibited this subject_source from being saved:</h2>
+
+      <ul>
+      <% @subject_source.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subject_source %><br />
+    <%= f.text_field :subject_source %>
+  </div>
+  <div class="field">
+    <%= f.label :ead_source %><br />
+    <%= f.text_field :ead_source %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

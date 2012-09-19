@@ -1,0 +1,111 @@
+<h1>Listing collections</h1>
+
+<table>
+  <tr>
+    <th>Enabled</th>
+    <th>Extent</th>
+    <th>Collection identifier</th>
+    <th>Title</th>
+    <th>Sort title</th>
+    <th>Inclusive dates</th>
+    <th>Predominant dates</th>
+    <th>Acquisition date</th>
+    <th>Orig copies url</th>
+    <th>Related materials url</th>
+    <th>Publication date</th>
+    <th>Biog hist author</th>
+    <th>Finding aid author</th>
+    <th>Repository</th>
+    <th>Classification</th>
+    <th>Descpriptive rules</th>
+    <th>Finding language</th>
+    <th>Normal date begin</th>
+    <th>Normal date end</th>
+    <th>Extent unit</th>
+    <th>Material type</th>
+    <th>Scope</th>
+    <th>Abstract</th>
+    <th>Arrangement</th>
+    <th>Alt extent statement</th>
+    <th>Access restrictions</th>
+    <th>Use restrictions</th>
+    <th>Physical access</th>
+    <th>Technical access</th>
+    <th>Acquisition source</th>
+    <th>Acquisition method</th>
+    <th>Appraisal info</th>
+    <th>Accrual info</th>
+    <th>Custodial history</th>
+    <th>Orig copies note</th>
+    <th>Related materials</th>
+    <th>Related publications</th>
+    <th>Separated materials</th>
+    <th>Preferred citation</th>
+    <th>Other note</th>
+    <th>Other url</th>
+    <th>Processing info</th>
+    <th>Revision history</th>
+    <th>Publication note</th>
+    <th>Biog hist</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @collections.each do |collection| %>
+  <tr>
+    <td><%= collection.enabled %></td>
+    <td><%= collection.extent %></td>
+    <td><%= collection.collection_identifier %></td>
+    <td><%= collection.title %></td>
+    <td><%= collection.sort_title %></td>
+    <td><%= collection.inclusive_dates %></td>
+    <td><%= collection.predominant_dates %></td>
+    <td><%= collection.acquisition_date %></td>
+    <td><%= collection.orig_copies_url %></td>
+    <td><%= collection.related_materials_url %></td>
+    <td><%= collection.publication_date %></td>
+    <td><%= collection.biog_hist_author %></td>
+    <td><%= collection.finding_aid_author %></td>
+    <td><%= collection.repository_id %></td>
+    <td><%= collection.classification_id %></td>
+    <td><%= collection.descpriptive_rules_id %></td>
+    <td><%= collection.finding_language_id %></td>
+    <td><%= collection.normal_date_begin %></td>
+    <td><%= collection.normal_date_end %></td>
+    <td><%= collection.extent_unit_id %></td>
+    <td><%= collection.material_type_id %></td>
+    <td><%= collection.scope %></td>
+    <td><%= collection.abstract %></td>
+    <td><%= collection.arrangement %></td>
+    <td><%= collection.alt_extent_statement %></td>
+    <td><%= collection.access_restrictions %></td>
+    <td><%= collection.use_restrictions %></td>
+    <td><%= collection.physical_access %></td>
+    <td><%= collection.technical_access %></td>
+    <td><%= collection.acquisition_source %></td>
+    <td><%= collection.acquisition_method %></td>
+    <td><%= collection.appraisal_info %></td>
+    <td><%= collection.accrual_info %></td>
+    <td><%= collection.custodial_history %></td>
+    <td><%= collection.orig_copies_note %></td>
+    <td><%= collection.related_materials %></td>
+    <td><%= collection.related_publications %></td>
+    <td><%= collection.separated_materials %></td>
+    <td><%= collection.preferred_citation %></td>
+    <td><%= collection.other_note %></td>
+    <td><%= collection.other_url %></td>
+    <td><%= collection.processing_info %></td>
+    <td><%= collection.revision_history %></td>
+    <td><%= collection.publication_note %></td>
+    <td><%= collection.biog_hist %></td>
+    <td><%= link_to 'Show', collection %></td>
+    <td><%= link_to 'Edit', edit_collection_path(collection) %></td>
+    <td><%= link_to 'Destroy', collection, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Collection', new_collection_path %>

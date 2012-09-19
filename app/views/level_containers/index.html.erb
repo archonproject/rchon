@@ -1,0 +1,33 @@
+<h1>Listing level_containers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ead level</th>
+    <th>Intellectual level</th>
+    <th>Physical container</th>
+    <th>Primary ead level</th>
+    <th>Global numbering</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @level_containers.each do |level_container| %>
+  <tr>
+    <td><%= level_container.name %></td>
+    <td><%= level_container.ead_level %></td>
+    <td><%= level_container.intellectual_level %></td>
+    <td><%= level_container.physical_container %></td>
+    <td><%= level_container.primary_ead_level %></td>
+    <td><%= level_container.global_numbering %></td>
+    <td><%= link_to 'Show', level_container %></td>
+    <td><%= link_to 'Edit', edit_level_container_path(level_container) %></td>
+    <td><%= link_to 'Destroy', level_container, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Level container', new_level_container_path %>

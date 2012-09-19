@@ -1,0 +1,27 @@
+<h1>Listing resarch_carts</h1>
+
+<table>
+  <tr>
+    <th>Researcher</th>
+    <th>Collection</th>
+    <th>Collection content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @resarch_carts.each do |resarch_cart| %>
+  <tr>
+    <td><%= resarch_cart.researcher_id %></td>
+    <td><%= resarch_cart.collection_id %></td>
+    <td><%= resarch_cart.collection_content_id %></td>
+    <td><%= link_to 'Show', resarch_cart %></td>
+    <td><%= link_to 'Edit', edit_resarch_cart_path(resarch_cart) %></td>
+    <td><%= link_to 'Destroy', resarch_cart, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Resarch cart', new_resarch_cart_path %>

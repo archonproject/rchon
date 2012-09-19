@@ -1,0 +1,2 @@
+module CollectionLocationEntriesHelper
+end

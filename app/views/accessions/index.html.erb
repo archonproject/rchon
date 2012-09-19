@@ -1,0 +1,57 @@
+<h1>Listing accessions</h1>
+
+<table>
+  <tr>
+    <th>Enabled</th>
+    <th>Accession date</th>
+    <th>Title</th>
+    <th>Identifier</th>
+    <th>Inclusive dates</th>
+    <th>Received extent</th>
+    <th>Received extent unit</th>
+    <th>Unprocessed extent</th>
+    <th>Unprocessed extent unit</th>
+    <th>Material type</th>
+    <th>Processing priority</th>
+    <th>Expected completion date</th>
+    <th>Donor</th>
+    <th>Donor contact info</th>
+    <th>Donor notes</th>
+    <th>Physical description</th>
+    <th>Scope content</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @accessions.each do |accession| %>
+  <tr>
+    <td><%= accession.enabled %></td>
+    <td><%= accession.accession_date %></td>
+    <td><%= accession.title %></td>
+    <td><%= accession.identifier %></td>
+    <td><%= accession.inclusive_dates %></td>
+    <td><%= accession.received_extent %></td>
+    <td><%= accession.received_extent_unit_id %></td>
+    <td><%= accession.unprocessed_extent %></td>
+    <td><%= accession.unprocessed_extent_unit_id %></td>
+    <td><%= accession.material_type_id %></td>
+    <td><%= accession.processing_priority_id %></td>
+    <td><%= accession.expected_completion_date %></td>
+    <td><%= accession.donor %></td>
+    <td><%= accession.donor_contact_info %></td>
+    <td><%= accession.donor_notes %></td>
+    <td><%= accession.physical_description %></td>
+    <td><%= accession.scope_content %></td>
+    <td><%= accession.comments %></td>
+    <td><%= link_to 'Show', accession %></td>
+    <td><%= link_to 'Edit', edit_accession_path(accession) %></td>
+    <td><%= link_to 'Destroy', accession, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Accession', new_accession_path %>

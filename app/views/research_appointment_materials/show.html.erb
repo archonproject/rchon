@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Research appointment:</b>
+  <%= @research_appointment_material.research_appointment_id %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%= @research_appointment_material.collection_id %>
+</p>
+
+<p>
+  <b>Collection content:</b>
+  <%= @research_appointment_material.collection_content_id %>
+</p>
+
+<p>
+  <b>Retrieval time:</b>
+  <%= @research_appointment_material.retrieval_time %>
+</p>
+
+<p>
+  <b>Retrieval user:</b>
+  <%= @research_appointment_material.retrieval_user_id %>
+</p>
+
+<p>
+  <b>Return time:</b>
+  <%= @research_appointment_material.return_time %>
+</p>
+
+<p>
+  <b>Return user:</b>
+  <%= @research_appointment_material.return_user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_research_appointment_material_path(@research_appointment_material) %> |
+<%= link_to 'Back', research_appointment_materials_path %>

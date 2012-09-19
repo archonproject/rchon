@@ -1,0 +1,2 @@
+module DigitalContentCreatorRelationshipsHelper
+end

@@ -1,0 +1,53 @@
+<h1>Listing repositories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Administrator</th>
+    <th>Code</th>
+    <th>Address</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Zip</th>
+    <th>Phone</th>
+    <th>Phone ext</th>
+    <th>Fax</th>
+    <th>Email</th>
+    <th>Url</th>
+    <th>Email signature</th>
+    <th>Research functionality</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @repositories.each do |repository| %>
+  <tr>
+    <td><%= repository.name %></td>
+    <td><%= repository.administrator %></td>
+    <td><%= repository.code %></td>
+    <td><%= repository.address %></td>
+    <td><%= repository.address2 %></td>
+    <td><%= repository.city %></td>
+    <td><%= repository.state %></td>
+    <td><%= repository.country %></td>
+    <td><%= repository.zip %></td>
+    <td><%= repository.phone %></td>
+    <td><%= repository.phone_ext %></td>
+    <td><%= repository.fax %></td>
+    <td><%= repository.email %></td>
+    <td><%= repository.url %></td>
+    <td><%= repository.email_signature %></td>
+    <td><%= repository.research_functionality %></td>
+    <td><%= link_to 'Show', repository %></td>
+    <td><%= link_to 'Edit', edit_repository_path(repository) %></td>
+    <td><%= link_to 'Destroy', repository, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Repository', new_repository_path %>

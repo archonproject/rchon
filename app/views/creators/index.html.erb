@@ -1,0 +1,51 @@
+<h1>Listing creators</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Name fuller form</th>
+    <th>Name variants</th>
+    <th>Creator type</th>
+    <th>Dates</th>
+    <th>Lcnaf dates</th>
+    <th>Lcnaf compliant</th>
+    <th>Biog hist author</th>
+    <th>Biog hist</th>
+    <th>Sources</th>
+    <th>Respository</th>
+    <th>Language</th>
+    <th>Script</th>
+    <th>Identifier</th>
+    <th>Creator source</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @creators.each do |creator| %>
+  <tr>
+    <td><%= creator.name %></td>
+    <td><%= creator.name_fuller_Form %></td>
+    <td><%= creator.name_variants %></td>
+    <td><%= creator.creator_type_id %></td>
+    <td><%= creator.dates %></td>
+    <td><%= creator.lcnaf_dates %></td>
+    <td><%= creator.lcnaf_compliant %></td>
+    <td><%= creator.biog_hist_author %></td>
+    <td><%= creator.biog_hist %></td>
+    <td><%= creator.sources %></td>
+    <td><%= creator.respository_id %></td>
+    <td><%= creator.language_id %></td>
+    <td><%= creator.script_id %></td>
+    <td><%= creator.identifier %></td>
+    <td><%= creator.creator_source_id %></td>
+    <td><%= link_to 'Show', creator %></td>
+    <td><%= link_to 'Edit', edit_creator_path(creator) %></td>
+    <td><%= link_to 'Destroy', creator, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Creator', new_creator_path %>

@@ -1,0 +1,69 @@
+<%= form_for(@digital_content) do |f| %>
+  <% if @digital_content.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@digital_content.errors.count, "error") %> prohibited this digital_content from being saved:</h2>
+
+      <ul>
+      <% @digital_content.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :browsable %><br />
+    <%= f.check_box :browsable %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_id %><br />
+    <%= f.number_field :collection_id %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_content_id %><br />
+    <%= f.number_field :collection_content_id %>
+  </div>
+  <div class="field">
+    <%= f.label :identifier %><br />
+    <%= f.text_field :identifier %>
+  </div>
+  <div class="field">
+    <%= f.label :scope %><br />
+    <%= f.text_area :scope %>
+  </div>
+  <div class="field">
+    <%= f.label :physical_description %><br />
+    <%= f.text_area :physical_description %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher %><br />
+    <%= f.text_field :publisher %>
+  </div>
+  <div class="field">
+    <%= f.label :contributor %><br />
+    <%= f.text_field :contributor %>
+  </div>
+  <div class="field">
+    <%= f.label :rights_statement %><br />
+    <%= f.text_area :rights_statement %>
+  </div>
+  <div class="field">
+    <%= f.label :content_url %><br />
+    <%= f.text_field :content_url %>
+  </div>
+  <div class="field">
+    <%= f.label :hyperlink_url %><br />
+    <%= f.check_box :hyperlink_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

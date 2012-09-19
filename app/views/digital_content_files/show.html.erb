@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Default access level:</b>
+  <%= @digital_content_file.default_access_level %>
+</p>
+
+<p>
+  <b>Digital content:</b>
+  <%= @digital_content_file.digital_content_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @digital_content_file.title %>
+</p>
+
+<p>
+  <b>Display order:</b>
+  <%= @digital_content_file.display_order %>
+</p>
+
+
+<%= link_to 'Edit', edit_digital_content_file_path(@digital_content_file) %> |
+<%= link_to 'Back', digital_content_files_path %>

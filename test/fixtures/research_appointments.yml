@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  submit_time: 1
+  researcher_id: 1
+  appointment_purpose_id: 1
+  arrival_time: 1
+  departure_time: 1
+  topic: MyString
+  researcher_comments: MyText
+  archivist_comments: MyText
+
+two:
+  submit_time: 1
+  researcher_id: 1
+  appointment_purpose_id: 1
+  arrival_time: 1
+  departure_time: 1
+  topic: MyString
+  researcher_comments: MyText
+  archivist_comments: MyText

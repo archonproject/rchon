@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  ead_level: MyString
+  intellectual_level: false
+  physical_container: false
+  primary_ead_level: false
+  global_numbering: false
+
+two:
+  name: MyString
+  ead_level: MyString
+  intellectual_level: false
+  physical_container: false
+  primary_ead_level: false
+  global_numbering: false

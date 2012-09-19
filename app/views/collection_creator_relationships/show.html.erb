@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Collection:</b>
+  <%= @collection_creator_relationship.collection_id %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @collection_creator_relationship.creator_id %>
+</p>
+
+<p>
+  <b>Primary creator:</b>
+  <%= @collection_creator_relationship.primary_creator %>
+</p>
+
+
+<%= link_to 'Edit', edit_collection_creator_relationship_path(@collection_creator_relationship) %> |
+<%= link_to 'Back', collection_creator_relationships_path %>

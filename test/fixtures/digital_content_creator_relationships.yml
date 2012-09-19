@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  digital_content_id: 1
+  creator_id: 1
+  primary_creator: false
+
+two:
+  digital_content_id: 1
+  creator_id: 1
+  primary_creator: false

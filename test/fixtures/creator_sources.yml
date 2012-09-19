@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  creator_source: MyString
+  source_abbreviation: MyString
+  citation: MyText
+  description: MyText
+
+two:
+  creator_source: MyString
+  source_abbreviation: MyString
+  citation: MyText
+  description: MyText

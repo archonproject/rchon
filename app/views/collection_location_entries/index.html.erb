@@ -1,0 +1,37 @@
+<h1>Listing collection_location_entries</h1>
+
+<table>
+  <tr>
+    <th>Collection</th>
+    <th>Location</th>
+    <th>Content</th>
+    <th>Range value</th>
+    <th>Section</th>
+    <th>Shelf</th>
+    <th>Extent</th>
+    <th>Extent unit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @collection_location_entries.each do |collection_location_entry| %>
+  <tr>
+    <td><%= collection_location_entry.collection_id %></td>
+    <td><%= collection_location_entry.location_id %></td>
+    <td><%= collection_location_entry.content %></td>
+    <td><%= collection_location_entry.range_value %></td>
+    <td><%= collection_location_entry.section %></td>
+    <td><%= collection_location_entry.shelf %></td>
+    <td><%= collection_location_entry.extent %></td>
+    <td><%= collection_location_entry.extent_unit_id %></td>
+    <td><%= link_to 'Show', collection_location_entry %></td>
+    <td><%= link_to 'Edit', edit_collection_location_entry_path(collection_location_entry) %></td>
+    <td><%= link_to 'Destroy', collection_location_entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Collection location entry', new_collection_location_entry_path %>

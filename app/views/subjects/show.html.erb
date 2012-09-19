@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @subject.subject %>
+</p>
+
+<p>
+  <b>Subject type:</b>
+  <%= @subject.subject_type_id %>
+</p>
+
+<p>
+  <b>Subject source:</b>
+  <%= @subject.subject_source_id %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @subject.parent_id %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @subject.identifier %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @subject.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>

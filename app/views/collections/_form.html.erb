@@ -1,0 +1,197 @@
+<%= form_for(@collection) do |f| %>
+  <% if @collection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@collection.errors.count, "error") %> prohibited this collection from being saved:</h2>
+
+      <ul>
+      <% @collection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :enabled %><br />
+    <%= f.check_box :enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :extent %><br />
+    <%= f.text_field :extent %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_identifier %><br />
+    <%= f.text_field :collection_identifier %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :sort_title %><br />
+    <%= f.text_field :sort_title %>
+  </div>
+  <div class="field">
+    <%= f.label :inclusive_dates %><br />
+    <%= f.text_field :inclusive_dates %>
+  </div>
+  <div class="field">
+    <%= f.label :predominant_dates %><br />
+    <%= f.text_field :predominant_dates %>
+  </div>
+  <div class="field">
+    <%= f.label :acquisition_date %><br />
+    <%= f.text_field :acquisition_date %>
+  </div>
+  <div class="field">
+    <%= f.label :orig_copies_url %><br />
+    <%= f.text_field :orig_copies_url %>
+  </div>
+  <div class="field">
+    <%= f.label :related_materials_url %><br />
+    <%= f.text_field :related_materials_url %>
+  </div>
+  <div class="field">
+    <%= f.label :publication_date %><br />
+    <%= f.text_field :publication_date %>
+  </div>
+  <div class="field">
+    <%= f.label :biog_hist_author %><br />
+    <%= f.text_field :biog_hist_author %>
+  </div>
+  <div class="field">
+    <%= f.label :finding_aid_author %><br />
+    <%= f.text_field :finding_aid_author %>
+  </div>
+  <div class="field">
+    <%= f.label :repository_id %><br />
+    <%= f.number_field :repository_id %>
+  </div>
+  <div class="field">
+    <%= f.label :classification_id %><br />
+    <%= f.number_field :classification_id %>
+  </div>
+  <div class="field">
+    <%= f.label :descpriptive_rules_id %><br />
+    <%= f.number_field :descpriptive_rules_id %>
+  </div>
+  <div class="field">
+    <%= f.label :finding_language_id %><br />
+    <%= f.number_field :finding_language_id %>
+  </div>
+  <div class="field">
+    <%= f.label :normal_date_begin %><br />
+    <%= f.number_field :normal_date_begin %>
+  </div>
+  <div class="field">
+    <%= f.label :normal_date_end %><br />
+    <%= f.number_field :normal_date_end %>
+  </div>
+  <div class="field">
+    <%= f.label :extent_unit_id %><br />
+    <%= f.number_field :extent_unit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :material_type_id %><br />
+    <%= f.number_field :material_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :scope %><br />
+    <%= f.text_area :scope %>
+  </div>
+  <div class="field">
+    <%= f.label :abstract %><br />
+    <%= f.text_area :abstract %>
+  </div>
+  <div class="field">
+    <%= f.label :arrangement %><br />
+    <%= f.text_area :arrangement %>
+  </div>
+  <div class="field">
+    <%= f.label :alt_extent_statement %><br />
+    <%= f.text_area :alt_extent_statement %>
+  </div>
+  <div class="field">
+    <%= f.label :access_restrictions %><br />
+    <%= f.text_area :access_restrictions %>
+  </div>
+  <div class="field">
+    <%= f.label :use_restrictions %><br />
+    <%= f.text_area :use_restrictions %>
+  </div>
+  <div class="field">
+    <%= f.label :physical_access %><br />
+    <%= f.text_area :physical_access %>
+  </div>
+  <div class="field">
+    <%= f.label :technical_access %><br />
+    <%= f.text_area :technical_access %>
+  </div>
+  <div class="field">
+    <%= f.label :acquisition_source %><br />
+    <%= f.text_area :acquisition_source %>
+  </div>
+  <div class="field">
+    <%= f.label :acquisition_method %><br />
+    <%= f.text_area :acquisition_method %>
+  </div>
+  <div class="field">
+    <%= f.label :appraisal_info %><br />
+    <%= f.text_area :appraisal_info %>
+  </div>
+  <div class="field">
+    <%= f.label :accrual_info %><br />
+    <%= f.text_area :accrual_info %>
+  </div>
+  <div class="field">
+    <%= f.label :custodial_history %><br />
+    <%= f.text_area :custodial_history %>
+  </div>
+  <div class="field">
+    <%= f.label :orig_copies_note %><br />
+    <%= f.text_area :orig_copies_note %>
+  </div>
+  <div class="field">
+    <%= f.label :related_materials %><br />
+    <%= f.text_area :related_materials %>
+  </div>
+  <div class="field">
+    <%= f.label :related_publications %><br />
+    <%= f.text_area :related_publications %>
+  </div>
+  <div class="field">
+    <%= f.label :separated_materials %><br />
+    <%= f.text_area :separated_materials %>
+  </div>
+  <div class="field">
+    <%= f.label :preferred_citation %><br />
+    <%= f.text_area :preferred_citation %>
+  </div>
+  <div class="field">
+    <%= f.label :other_note %><br />
+    <%= f.text_area :other_note %>
+  </div>
+  <div class="field">
+    <%= f.label :other_url %><br />
+    <%= f.text_area :other_url %>
+  </div>
+  <div class="field">
+    <%= f.label :processing_info %><br />
+    <%= f.text_area :processing_info %>
+  </div>
+  <div class="field">
+    <%= f.label :revision_history %><br />
+    <%= f.text_area :revision_history %>
+  </div>
+  <div class="field">
+    <%= f.label :publication_note %><br />
+    <%= f.text_area :publication_note %>
+  </div>
+  <div class="field">
+    <%= f.label :biog_hist %><br />
+    <%= f.text_area :biog_hist %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

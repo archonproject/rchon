@@ -1,0 +1,33 @@
+<%= form_for(@creator_source) do |f| %>
+  <% if @creator_source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@creator_source.errors.count, "error") %> prohibited this creator_source from being saved:</h2>
+
+      <ul>
+      <% @creator_source.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :creator_source %><br />
+    <%= f.text_field :creator_source %>
+  </div>
+  <div class="field">
+    <%= f.label :source_abbreviation %><br />
+    <%= f.text_field :source_abbreviation %>
+  </div>
+  <div class="field">
+    <%= f.label :citation %><br />
+    <%= f.text_area :citation %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

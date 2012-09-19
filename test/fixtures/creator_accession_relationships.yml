@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  accession_id: 1
+  classification_id: 1
+  collection_id: 1
+  primary_collection: false
+
+two:
+  accession_id: 1
+  classification_id: 1
+  collection_id: 1
+  primary_collection: false

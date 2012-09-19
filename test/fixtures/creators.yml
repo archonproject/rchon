@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  name_fuller_Form: MyString
+  name_variants: MyString
+  creator_type_id: 1
+  dates: MyString
+  lcnaf_dates: MyString
+  lcnaf_compliant: false
+  biog_hist_author: MyString
+  biog_hist: MyText
+  sources: MyText
+  respository_id: 1
+  language_id: 1
+  script_id: 1
+  identifier: MyString
+  creator_source_id: 1
+
+two:
+  name: MyString
+  name_fuller_Form: MyString
+  name_variants: MyString
+  creator_type_id: 1
+  dates: MyString
+  lcnaf_dates: MyString
+  lcnaf_compliant: false
+  biog_hist_author: MyString
+  biog_hist: MyText
+  sources: MyText
+  respository_id: 1
+  language_id: 1
+  script_id: 1
+  identifier: MyString
+  creator_source_id: 1

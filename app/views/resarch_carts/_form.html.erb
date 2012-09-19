@@ -1,0 +1,29 @@
+<%= form_for(@resarch_cart) do |f| %>
+  <% if @resarch_cart.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resarch_cart.errors.count, "error") %> prohibited this resarch_cart from being saved:</h2>
+
+      <ul>
+      <% @resarch_cart.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :researcher_id %><br />
+    <%= f.number_field :researcher_id %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_id %><br />
+    <%= f.number_field :collection_id %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_content_id %><br />
+    <%= f.number_field :collection_content_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

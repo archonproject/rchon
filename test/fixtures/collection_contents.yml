@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  collection_id: 1
+  level_container_id: 1
+  root_content_id: 1
+  parent_id: 1
+  sort_order: 1
+  level_container_identifier: MyString
+  date: MyString
+  contains_content: false
+  enabled: false
+  title: MyText
+  private_title: MyText
+  description: MyText
+
+two:
+  collection_id: 1
+  level_container_id: 1
+  root_content_id: 1
+  parent_id: 1
+  sort_order: 1
+  level_container_identifier: MyString
+  date: MyString
+  contains_content: false
+  enabled: false
+  title: MyText
+  private_title: MyText
+  description: MyText

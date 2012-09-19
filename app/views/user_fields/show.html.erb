@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Collection content:</b>
+  <%= @user_field.collection_content_id %>
+</p>
+
+<p>
+  <b>Ead element:</b>
+  <%= @user_field.ead_element_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @user_field.title %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @user_field.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_field_path(@user_field) %> |
+<%= link_to 'Back', user_fields_path %>

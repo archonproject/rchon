@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Researcher:</b>
+  <%= @resarch_cart.researcher_id %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%= @resarch_cart.collection_id %>
+</p>
+
+<p>
+  <b>Collection content:</b>
+  <%= @resarch_cart.collection_content_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_resarch_cart_path(@resarch_cart) %> |
+<%= link_to 'Back', resarch_carts_path %>

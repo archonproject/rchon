@@ -1,0 +1,45 @@
+<h1>Listing collection_contents</h1>
+
+<table>
+  <tr>
+    <th>Collection</th>
+    <th>Level container</th>
+    <th>Root content</th>
+    <th>Parent</th>
+    <th>Sort order</th>
+    <th>Level container identifier</th>
+    <th>Date</th>
+    <th>Contains content</th>
+    <th>Enabled</th>
+    <th>Title</th>
+    <th>Private title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @collection_contents.each do |collection_content| %>
+  <tr>
+    <td><%= collection_content.collection_id %></td>
+    <td><%= collection_content.level_container_id %></td>
+    <td><%= collection_content.root_content_id %></td>
+    <td><%= collection_content.parent_id %></td>
+    <td><%= collection_content.sort_order %></td>
+    <td><%= collection_content.level_container_identifier %></td>
+    <td><%= collection_content.date %></td>
+    <td><%= collection_content.contains_content %></td>
+    <td><%= collection_content.enabled %></td>
+    <td><%= collection_content.title %></td>
+    <td><%= collection_content.private_title %></td>
+    <td><%= collection_content.description %></td>
+    <td><%= link_to 'Show', collection_content %></td>
+    <td><%= link_to 'Edit', edit_collection_content_path(collection_content) %></td>
+    <td><%= link_to 'Destroy', collection_content, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Collection content', new_collection_content_path %>

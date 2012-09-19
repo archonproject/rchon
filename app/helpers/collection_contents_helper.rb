@@ -1,0 +1,2 @@
+module CollectionContentsHelper
+end

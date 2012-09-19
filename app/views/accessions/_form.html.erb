@@ -1,0 +1,89 @@
+<%= form_for(@accession) do |f| %>
+  <% if @accession.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accession.errors.count, "error") %> prohibited this accession from being saved:</h2>
+
+      <ul>
+      <% @accession.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :enabled %><br />
+    <%= f.check_box :enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :accession_date %><br />
+    <%= f.text_field :accession_date %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :identifier %><br />
+    <%= f.text_field :identifier %>
+  </div>
+  <div class="field">
+    <%= f.label :inclusive_dates %><br />
+    <%= f.text_field :inclusive_dates %>
+  </div>
+  <div class="field">
+    <%= f.label :received_extent %><br />
+    <%= f.text_field :received_extent %>
+  </div>
+  <div class="field">
+    <%= f.label :received_extent_unit_id %><br />
+    <%= f.number_field :received_extent_unit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unprocessed_extent %><br />
+    <%= f.text_field :unprocessed_extent %>
+  </div>
+  <div class="field">
+    <%= f.label :unprocessed_extent_unit_id %><br />
+    <%= f.number_field :unprocessed_extent_unit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :material_type_id %><br />
+    <%= f.number_field :material_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :processing_priority_id %><br />
+    <%= f.number_field :processing_priority_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expected_completion_date %><br />
+    <%= f.text_field :expected_completion_date %>
+  </div>
+  <div class="field">
+    <%= f.label :donor %><br />
+    <%= f.text_field :donor %>
+  </div>
+  <div class="field">
+    <%= f.label :donor_contact_info %><br />
+    <%= f.text_area :donor_contact_info %>
+  </div>
+  <div class="field">
+    <%= f.label :donor_notes %><br />
+    <%= f.text_area :donor_notes %>
+  </div>
+  <div class="field">
+    <%= f.label :physical_description %><br />
+    <%= f.text_area :physical_description %>
+  </div>
+  <div class="field">
+    <%= f.label :scope_content %><br />
+    <%= f.text_area :scope_content %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

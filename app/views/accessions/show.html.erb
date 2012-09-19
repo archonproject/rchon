@@ -1,0 +1,95 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Enabled:</b>
+  <%= @accession.enabled %>
+</p>
+
+<p>
+  <b>Accession date:</b>
+  <%= @accession.accession_date %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @accession.title %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @accession.identifier %>
+</p>
+
+<p>
+  <b>Inclusive dates:</b>
+  <%= @accession.inclusive_dates %>
+</p>
+
+<p>
+  <b>Received extent:</b>
+  <%= @accession.received_extent %>
+</p>
+
+<p>
+  <b>Received extent unit:</b>
+  <%= @accession.received_extent_unit_id %>
+</p>
+
+<p>
+  <b>Unprocessed extent:</b>
+  <%= @accession.unprocessed_extent %>
+</p>
+
+<p>
+  <b>Unprocessed extent unit:</b>
+  <%= @accession.unprocessed_extent_unit_id %>
+</p>
+
+<p>
+  <b>Material type:</b>
+  <%= @accession.material_type_id %>
+</p>
+
+<p>
+  <b>Processing priority:</b>
+  <%= @accession.processing_priority_id %>
+</p>
+
+<p>
+  <b>Expected completion date:</b>
+  <%= @accession.expected_completion_date %>
+</p>
+
+<p>
+  <b>Donor:</b>
+  <%= @accession.donor %>
+</p>
+
+<p>
+  <b>Donor contact info:</b>
+  <%= @accession.donor_contact_info %>
+</p>
+
+<p>
+  <b>Donor notes:</b>
+  <%= @accession.donor_notes %>
+</p>
+
+<p>
+  <b>Physical description:</b>
+  <%= @accession.physical_description %>
+</p>
+
+<p>
+  <b>Scope content:</b>
+  <%= @accession.scope_content %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @accession.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_accession_path(@accession) %> |
+<%= link_to 'Back', accessions_path %>
