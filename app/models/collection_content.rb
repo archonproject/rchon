@@ -4,4 +4,5 @@ class CollectionContent < ActiveRecord::Base
   belongs_to :level_container
   has_many :digitalContents
   has_many :resarchCarts
+  has_many :research_appointment_materials
 end
