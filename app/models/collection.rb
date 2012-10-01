@@ -3,4 +3,5 @@ class Collection < ActiveRecord::Base
   has_many :collection_contents
   belongs_to :classification
   has_one :collection_creator_relationship
+  has_one :collectionLocationEntry
 end
