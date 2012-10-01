@@ -5,4 +5,5 @@ class Collection < ActiveRecord::Base
   has_one :collection_creator_relationship
   has_one :collectionLocationEntry
   has_many :digitalContents
+  has_many :resarchCarts
 end
