@@ -3,4 +3,5 @@ class DigitalContent < ActiveRecord::Base
   belongs_to :collection
   belongs_to :collection_content
   has_many :digitalContentCreatorRelationships
+  has_one :digital_content_file
 end
