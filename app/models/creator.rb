@@ -4,4 +4,5 @@ class Creator < ActiveRecord::Base
   has_many :collection_creator_relationships
   has_many :creatorBookRelationships
   has_many :creatorRelationships
+  has_many :diigtalContentCreatorRelationships
 end
