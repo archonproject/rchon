@@ -3,4 +3,5 @@ class CollectionContent < ActiveRecord::Base
   belongs_to :collection
   belongs_to :level_container
   has_many :digitalContents
+  has_many :resarchCarts
 end
