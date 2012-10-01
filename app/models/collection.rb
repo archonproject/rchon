@@ -6,4 +6,5 @@ class Collection < ActiveRecord::Base
   has_one :collectionLocationEntry
   has_many :digitalContents
   has_many :resarchCarts
+  has_many :research_appointment_materials
 end
