@@ -5,4 +5,5 @@ class CollectionContent < ActiveRecord::Base
   has_many :digitalContents
   has_many :resarchCarts
   has_many :research_appointment_materials
+  has_one :userField
 end
