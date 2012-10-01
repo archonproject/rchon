@@ -4,4 +4,5 @@ class Collection < ActiveRecord::Base
   belongs_to :classification
   has_one :collection_creator_relationship
   has_one :collectionLocationEntry
+  has_many :digitalContents
 end
