@@ -3,5 +3,6 @@ class Accession < ActiveRecord::Base
   belongs_to :material_type
   has_many :accessionLocationEntries
   has_many :creator_accession_relationships
+  has_many :locations, :through => :accessionLocationEntries
 
 end
