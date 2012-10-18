@@ -4,7 +4,8 @@ class Creator < ActiveRecord::Base
   has_many :collection_creator_relationships
   has_many :creatorBookRelationships
   has_many :creatorRelationships
-  has_many :diigtalContentCreatorRelationships
+  has_many :digitalContentCreatorRelationships
   has_many :collections , :through => :collection_creator_relationships 
   has_many :books , :through => :creatorBookRelationships
+  has_many :digitalContents , :through => :digitalContentCreatorRelationships
 end
