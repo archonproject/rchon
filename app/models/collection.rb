@@ -6,6 +6,6 @@ class Collection < ActiveRecord::Base
   has_one :collection_location_entry,:dependent => :destroy
   has_many :digitalContents
   has_many :resarchCarts
-  has_many :research_appointment_materials
+  has_many :researchAppointmentMaterials
   has_many  :creators, :through => :collection_creator_relationships
 end
