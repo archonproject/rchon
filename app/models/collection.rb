@@ -3,7 +3,7 @@ class Collection < ActiveRecord::Base
   has_many :collection_contents, :dependent => :destroy
   belongs_to :classification
   has_many :collection_creator_relationships, :dependent => :destroy
-  has_one :collectionLocationEntry,:dependent => :destroy
+  has_one :collection_location_entry,:dependent => :destroy
   has_many :digitalContents
   has_many :resarchCarts
   has_many :research_appointment_materials
