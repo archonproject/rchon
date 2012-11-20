@@ -5,9 +5,9 @@ class Accession < ActiveRecord::Base
   belongs_to :extent_unit
   has_many :accession_location_entries ,:dependent => :destroy
   has_many :creator_accession_relationships,:dependent => :destroy
-  has_many :locations, :through => :accession_location_entries
-  has_many :subjects, :through => :accession_subject_relationships
-  has_many :creators, :through => :creator_accession_relationships
-  has_many :collections, :through => :accession_collection_relationships
+  has_many :locations, :through => :accession_location_entries, :dependent => destroy
+  has_many :subjects, :through => :accession_subject_relationships, :dependent => destroy
+  has_many :creators, :through => :creator_accession_relationships, :dependent => destroy
+  has_many :collections, :through => :accession_collection_relationships, :dependent => destroy
 
 end
