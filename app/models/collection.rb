@@ -4,8 +4,10 @@ class Collection < ActiveRecord::Base
   belongs_to :classification
   has_many :collection_creator_relationships, :dependent => :destroy
   has_one :collection_location_entry,:dependent => :destroy
+  has_many :accession_collection_relationships, :dependent => :destroy
   has_many :digitalContents
   has_many :resarchCarts
   has_many :researchAppointmentMaterials
   has_many  :creators, :through => :collection_creator_relationships
+  has_many :accessions, :through => :accession_collection_relationships
 end
