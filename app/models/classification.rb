@@ -4,5 +4,5 @@ class Classification < ActiveRecord::Base
   belongs_to :classification, :foreign_key => "parent_id"
   has_many :collections
   has_many :accession_collection_relationships, :dependent => :destroy
-  has_many :accessions, :through => accession_collection_relationships
+  has_many :accessions, :through => :accession_collection_relationships
 end
