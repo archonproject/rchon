@@ -16,7 +16,7 @@ class Collection < ActiveRecord::Base
   has_many :resarch_carts
   has_many :research_appointment_materials
   has_many :subjects, :through => :collection_subject_relationships
-  has_many :languages, :through => collection_language_relationships
+  has_many :languages, :through => :collection_language_relationships
   has_many :locations, :through => :collection_location_entries
   has_many  :creators, :through => :collection_creator_relationships
   has_many :accessions, :through => :accession_collection_relationships
