@@ -8,7 +8,7 @@ class DigitalContent < ActiveRecord::Base
   has_one :digital_content_file
   has_many :creators , :through => :digital_content_creator_relationships
   has_many :languages, :through => :digital_content_language_relationships
-  :has_many :subjects, :through => :digital_content_subject_relationships
+  has_many :subjects, :through => :digital_content_subject_relationships
   has_many :files
 
 end
