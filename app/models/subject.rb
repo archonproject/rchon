@@ -3,6 +3,8 @@ class Subject < ActiveRecord::Base
   belongs_to :subject_source
   has_many :accession_subject_relationships, :dependent => :destroy
   has_many :collection_subject_relationships, :dependent => :destroy
+  has_many :digital_content_subject_relationships, :dependent => :destroy
   has_many :accessions, :through => :accession_subject_relationships
   has_many :collections, :through => :collection_subject_relationships 
+  has_many :digital_contents, :through => :digital_content_subject_relationships
 end
