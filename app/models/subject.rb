@@ -4,5 +4,5 @@ class Subject < ActiveRecord::Base
   has_many :accession_subject_relationships, :dependent => :destroy
   has_many :collection_subject_relationships, :dependent => :destroy
   has_many :accessions, :through => :accession_subject_relationships
-  has_many :subjects, :through => :collection_subject_relationships 
+  has_many :collections, :through => :collection_subject_relationships 
 end
