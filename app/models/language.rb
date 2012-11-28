@@ -1,4 +1,5 @@
 class Language < ActiveHash::Base
+<<<<<<< HEAD
 self.data=[ 
 {:LanguageLong => "Abkhazian",:ID => 1950,:LanguageShort => "abk"},
 {:LanguageLong => "Achinese",:ID => 1951,:LanguageShort => "ace"},
@@ -502,3 +503,12 @@ self.data=[
 {:LanguageLong => "Zuni",:ID => 2449,:LanguageShort => "zun"}
 ]
 end
+=======
+  has_many :collections
+  has_many :collection_language_relationships, :dependent => :destroy
+  has_many :collections, :through => :collection_language_relationsips
+  has_many :creators
+  has_many :digital_content_language_relationships
+  has_many :digital_contents, :through => :digital_content_creator_relationships
+end
+>>>>>>> ed522209b7a7d483c6edb554e85467529b62ca29
