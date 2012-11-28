@@ -1,5 +1,4 @@
-class SubjectType < ActiveHash::Base
-self.data=[ 
+class SubjectType < ActiveHash::Baseself.data=[ 
 {:EncodingAnalog => "650",:EADType => "subject",:SubjectType => "Topical Term",:ID => 1},
 {:EncodingAnalog => "245$f",:EADType => "date",:SubjectType => "Date",:ID => 2},
 {:EncodingAnalog => "610",:EADType => "corpname",:SubjectType => "Corporate Name",:ID => 3},
