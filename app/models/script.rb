@@ -1,6 +1,4 @@
-class Script < ActiveHash::Base
-<<<<<<< HEAD
-self.data=[ 
+class Script < ActiveHash::Baseself.data=[ 
 {:ScriptCode => "160",:ScriptShort => "Arab",:ScriptFrenchLong => "arabe",:ID => 1,:ScriptEnglishLong => "Arabic"},
 {:ScriptCode => "124",:ScriptShort => "Armi",:ScriptFrenchLong => "araméen impérial",:ID => 2,:ScriptEnglishLong => "Imperial Aramaic"},
 {:ScriptCode => "230",:ScriptShort => "Armn",:ScriptFrenchLong => "arménien",:ID => 3,:ScriptEnglishLong => "Armenian"},
@@ -138,9 +136,6 @@ self.data=[
 {:ScriptCode => "998",:ScriptShort => "Zyyy",:ScriptFrenchLong => "codet pour écriture indéterminée",:ID => 135,:ScriptEnglishLong => "Code for undetermined script"},
 {:ScriptCode => "999",:ScriptShort => "Zzzz",:ScriptFrenchLong => "codet pour écriture non codée",:ID => 136,:ScriptEnglishLong => "Code for uncoded script"}
 ]
-end
-=======
   has_many :creators
   
 end
->>>>>>> ed522209b7a7d483c6edb554e85467529b62ca29
