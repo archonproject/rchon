@@ -1,5 +1,4 @@
-class PhraseType < ActiveHash::Base
-self.data=[ 
+class PhraseType < ActiveHash::Baseself.data=[ 
 {:PhraseType => "Noun",:ID => 1},
 {:PhraseType => "Message",:ID => 2},
 {:PhraseType => "Description",:ID => 3},
