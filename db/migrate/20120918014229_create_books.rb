@@ -11,6 +11,7 @@ class CreateBooks < ActiveRecord::Migration
       t.integer :number_of_pages
       t.text :description
       t.text :notes
+      t.integer :collection_id
 
       t.timestamps
     end
