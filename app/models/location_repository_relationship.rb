@@ -1,0 +1,4 @@
+ class LocationRepositoryRelationship < ActiveRecord::Base
+  belongs_to :location
+  belongs_to :repository
+end

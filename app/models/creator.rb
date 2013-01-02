@@ -1,8 +1,22 @@
 class Creator < ActiveRecord::Base
   attr_accessible :biog_hist, :biog_hist_author, :creator_source_id, :creator_type_id, :dates, :identifier, :language_id, :lcnaf_compliant, :lcnaf_dates, :name, :name_fuller_Form, :name_variants, :respository_id, :script_id, :sources
+  belongs_to :repository
+  belongs_to :creator_type
+  belongs_to :creator_source
+  belongs_to :language
+  belongs_to :repository
+  belongs_to :script
   has_many :classifications
-  has_many :collection_creator_relationships
-  has_many :creatorBookRelationships
-  has_many :creatorRelationships
-  has_many :diigtalContentCreatorRelationships
+  has_many :collection_creator_relationships ,:dependent => :destroy
+  has_many :creator_book_relationships ,:dependent => :destroy
+  has_many :creator_relationships, :dependent => :destroy
+  has_many :creator_accession_relationships, :dependent => :destroy
+  has_many :digital_content_creator_relationships ,:dependent => :destroy
+  has_many :collection_content_creator_relationships, :dependent => :destroy
+  has_many :collections , :through => :collection_creator_relationships 
+  has_many :books , :through => :creator_book_relationships
+  has_many :digital_contents , :through => :digital_content_creator_relationships
+  has_many :accessions, :through => :creator_accession_relationships
+  has_many :collection_contents, :through => :collection_content_creator_relationships
+  has_many :creators, :through => :creator_relationships
 end
